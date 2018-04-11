@@ -1,25 +1,18 @@
-These notes are based on the __AE2-208: Materials__ module lectures and handouts by _Dr. Qianqian Li_ and _Prof. Emile S Greenhalgh_ from the Faculty of Engineering, Department of Aeronautics, Imperial College London.
-
-There is also extensive use of content from the recommended texts:
-1. Engineering Materials 1 _4th Editions_ - Michael F. Ashby, David R. H. Jones
-2. Engineering Materials 2 _4th Editions_ - Michael F. Ashby, David R. H. Jones
+These notes are based on the __AE2-209: Mathematics__ module lectures and handouts by _Dr. Andrew Wynn_ and _Dr. Koon-Yang Lee_ from the Faculty of Engineering, Department of Aeronautics, Imperial College London.
 
 There is no assurance that information contained here are error-free. Users are reminded to use at your own discretion. 
 
 ### Course Outline
-1. Introduction and Materials Selection
-2. Metals & Metal Structures; Equilibrium Constitution & Phase Diagrams
-3. Metals. Driving Force for Structural Change
-4. Steels and Alloys
-5. Light Alloys – Aluminium Alloys
-6. Light Alloys – Titanium and Magnesium Alloys
-7. Fatigue failure; Fatigue design;
-8. Creep Deformation and Fracture.
-9. Oxidation and Corrosion. Oxidation of materials.
-10. Polymers
-11. Ceramics and Composites
-12. Nanomaterials and CNT reinforced composites
-13. Natural and Multifunctional Materials. 
+1. Partial Differential Equations (PDEs)
+2. Fourier Series
+3. PDE Solution Methods
+4. Complex Analysis + Potential Flow Theory
+5. Basic Probability
+6. Conditional Probability
+7. Discrete Random Variables
+8. Continuous Randon Variables
+9. Expectation and Variance
+10. Reliability Analysis
 
 ### License
 The content of this project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. However, the source code used to display and format the content is licensed under the [The LaTeX Project Public License
