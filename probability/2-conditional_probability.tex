@@ -1,0 +1,71 @@
+\section{Conditional probability} % (fold)
+\label{sec:conditional_probability}
+
+The conditional probability of $A$ given $B$ is written as
+
+\begin{equation}
+  P(A|B) = \frac{P(A\cap B)}{P(B)}
+\end{equation}
+
+Some properties of conditional probabilities.
+
+\begin{subequations}
+  \begin{equation}
+    P(A|B) \geq 0
+  \end{equation}
+  \begin{equation}
+    P(S|B) = 1
+  \end{equation}
+  \begin{equation}
+    \text{If A and B are disjoint} \rightarrow P(A \cup B|C) = P(A|C) + P(B|C)
+  \end{equation}
+  \begin{equation}
+    P(\overline{A}|B) = 1 - P(A|B)
+  \end{equation}
+\end{subequations}
+
+
+%--------------------------------------------------
+\subsection{Independent Events} % (fold)
+\label{sub:independent_events}
+
+$A$ and $B$ are independent if
+\begin{equation}
+  P(A\cap B) = P(A)P(B)
+\end{equation}
+$A$, $B$ and $C$ are co-independent if
+\begin{equation}
+  P(A\cap B\cap C) = P(A)P(B)P(C)
+\end{equation}
+% subsection independent_events (end)
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsection{Law of Total Probability} % (fold)
+\label{sub:law_of_total_probability}
+
+Let $B$ be an event and $A_i$ be disjoint events.
+
+\begin{equation}
+  S = A_1 \cup A_2 \cup A_3... \cup A_n
+\end{equation}
+
+\begin{equation}
+  P(B) = \sum^n_{i=1}P(B|A_i)P(A_i)
+\end{equation}
+% subsection law_of_total_probability (end)
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsection{Bayes' Theorem} % (fold)
+\label{sub:bayes_theorem}
+
+Let $A_i$ be disjoint events and B be another event. Then,
+
+\begin{equation}
+  P(A_j|B) = \frac{P(B|A_j)P(A_j)}{\sum_{i=1}^nP(B|A_i)P(A_i)}
+\end{equation}
+
+% subsection bayes_theorem (end)
+%--------------------------------------------------
+% section conditional_probability (end)
