@@ -1,0 +1,47 @@
+\section{Discrete Random Variables} % (fold)
+\label{sec:discrete_random_variables}
+
+%--------------------------------------------------
+Let $X$ be a discrete random variable that takes values in the discrete set $S = {x_1, x_2, ...}$. Let $P(X = x_i) = p_i$, that is, the probability that $X$ takes the value $x_i$ is equal to $p_i$. Then any set of values $p_i$ satisfying
+
+\begin{subequations}
+  \begin{equation}
+    p_i \geq 0
+  \end{equation}
+  \begin{equation}
+    \sum_{i}p_i = 1
+  \end{equation}
+\end{subequations}
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsection{Binomial Distribution} % (fold)
+\label{sub:binomial_distribution}
+
+A binomial distribution is used when we have a trial that
+\begin{enumerate}
+  \item either  succeeds with probability $p$ or fails with probability $1-p$
+  \item is repeated $n$ times, \textbf{independently}
+\end{enumerate}
+
+For n trials, for the probability of $X$ successes has the following probability distribution
+
+\begin{equation}
+  P(X=m) = \binom{n}{m}p^m(1-p)^{n-m}
+\end{equation}
+% subsection binomial_distribution (end)
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsubsection{Poisson Distribution} % (fold)
+\label{ssub:poisson_distribution}
+
+A Poisson distribution is used to model events that occur randomly and independently in space and time.
+
+Assuming events occur randomly at a rate $\lambda \geq 0$,
+\begin{equation}
+  P(X=n)=\frac{e^{- \lambda t}(\lambda t)^n}{n!}
+\end{equation}
+% subsubsection poisson_distribution (end)
+%--------------------------------------------------
+% section discrete_random_variables (end)
