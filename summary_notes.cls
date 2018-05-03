@@ -1,4 +1,4 @@
-\LoadClass[11pt, twoside]{report}
+\LoadClass[11pt, twoside]{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{summary_notes}[2018/01/11 Latex Class for Simple Module Summary Notes. Works better with <3.]
 
