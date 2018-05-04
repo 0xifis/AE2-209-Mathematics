@@ -1,0 +1,94 @@
+\section{Reliability Analysis} % (fold)
+\label{sec:reliability_analysis}
+
+For a continuous random variable $T$ that represents time to failure of a system, the probability of a system failure before time $t$ is
+
+\begin{equation}
+  P(T \leq t) = F(t) = \int^t_0 f(u) du
+\end{equation}
+
+The reliability function is
+
+\begin{equation}
+  R(t) = P(T > t) = 1 - F(t)
+\end{equation}
+
+Then, the hazard rate is
+
+\begin{equation}
+  h(t) = \frac{f(t)}{R(t)}
+\end{equation}
+
+
+%-------------------------------------------------- 
+\subsection{Exponential Failure Model} % (fold)
+\label{sub:exponential_failure_model}
+
+\begin{equation}
+  f(t) = \begin{cases}
+    \lambda e^{-\lambda t} \qquad &\text{for } t \geq 0 \\
+    0 \qquad &\text{for } t < 0 \\
+  \end{cases}
+\end{equation}
+\begin{multicols}{2}
+\begin{equation}
+  F(t) = \int^t_0 f(u) du = 1 - e^{-\lambda t}
+\end{equation}
+\begin{equation}
+  R(t) = e^{-\lambda t}
+\end{equation}
+
+\begin{equation}
+  H(t) = - \log(R(t))  = \lambda t
+\end{equation}
+
+\begin{equation}
+  h(t) = \frac{dH(t)}{dt} = \lambda
+\end{equation}
+\end{multicols}
+% subsection exponential_failure_model (end)
+%-------------------------------------------------- 
+
+
+%-------------------------------------------------- 
+\subsection{Weibull Failure Model} % (fold)
+\label{sub:weibull_failure_model}
+\begin{equation}
+  f(t) = \begin{cases}
+    \lambda \beta(\lambda t)^{\beta-1}e^{-(\lambda t)^\beta} \qquad &\text{for } t \geq 0 \\
+    0 \qquad &\text{for } t < 0 \\
+  \end{cases}
+\end{equation}
+\begin{multicols}{2}
+  \begin{equation}
+    F(t) = \int^t_0 \lambda \beta(\lambda U)^{\beta-1}du = 1 - e^{-(\lambda t)^\beta}
+  \end{equation}
+  \begin{equation}
+    R(t) = e^{-(\lambda t)^\beta}
+  \end{equation}
+  \begin{equation}
+    H(t) = (\lambda t)^{\beta}
+  \end{equation}
+  \begin{equation}
+    h(t) = \beta \lambda (\lambda t)^{\beta-1}
+  \end{equation}
+\end{multicols}
+% subsection weibull_failure_model (end)
+%-------------------------------------------------- 
+
+\subsection{System of Components} % (fold)
+\label{sub:system_of_components}
+
+\textbf{Series}
+\begin{equation}
+  R(t) = R_1(t)R_2(t)
+\end{equation}
+
+\textbf{Parallel}
+\begin{equation}
+  R(t) = 1 - [1- R_1(t)][1 - R_2(t)]
+\end{equation}
+
+% subsection system_of_components (end)
+
+% section reliability_analysis (end)
