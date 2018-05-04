@@ -1,0 +1,96 @@
+\section{Continuous Random Variables} % (fold)
+\label{sec:continuous_random_variables}
+
+The cumulative distribution function (c.d.f) of a continuous random variable $X$ is defined by
+
+\begin{subequations}
+  \begin{equation}
+    F(x) = P(X \leq x)
+  \end{equation}
+
+  Let a continuous random variable $X$ has c.d.f. $F(X)$. Then its probability density function (p.d.f.) $f(x)$ is given by
+
+  \begin{equation}
+    f(x) = \frac{dF(x)}{dx}
+  \end{equation}
+\end{subequations}
+
+
+%--------------------------------------------------
+\subsection{Exponential Distribution} % (fold)
+\label{sub:exponential_distribution}
+
+\begin{subequations}
+  Let
+  \begin{equation}
+    P(T>t) = e^{- \lambda t}
+  \end{equation}
+  Then,
+  \begin{equation}
+    F(t) = 1 - P(T>t)= 1 - e^{-\lambda t}, t\geq 0
+  \end{equation}
+  \begin{equation}
+    f(t) =  \begin{cases}
+              \lambda e^{-\lambda t} & \text{for } t \geq 0 \\
+              0 & \text{for } t < 0 \\
+            \end{cases}
+  \end{equation}
+\end{subequations}
+% subsection exponential_distribution (end)
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsection{Uniform Distribution} % (fold)
+\label{sub:uniform_distribution}
+
+\begin{subequations}
+  \begin{equation}
+    f(x) =  \begin{cases}
+              \frac{1}{b-a} & \text{for } a \leq x \leq b \\
+              0 & \text{for } x < a, x>b  \\
+            \end{cases}
+  \end{equation}
+  \begin{equation}
+    F(x) = \int^x_{-\infty}f(x)dx = \begin{cases}
+                                      0 & \text{for } x < a \\
+                                      \frac{x-a}{b-a} & \text{for } a \leq x \leq b \\
+                                      0 & \text{for } x > b \\
+                                    \end{cases}
+  \end{equation}
+\end{subequations}
+% subsection uniform_distribution (end)
+%--------------------------------------------------
+
+
+%--------------------------------------------------
+\subsection{Normal Distribution} % (fold)
+\label{sub:normal_distribution}
+The pdf of a continuous random variable, $X$, that has a standard normal distribution with mean 0 and variance 1 is
+
+\begin{subequations}
+\begin{equation}
+  f(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}} \qquad \text{for }  -\infty < x <\infty
+\end{equation}
+and its cdf is
+\begin{equation}
+  F(x) = \int^\infty_{-\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx \qquad \text{for }  -\infty < x <\infty
+\end{equation}
+\end{subequations}
+
+% subsection normal_distribution (end)
+%--------------------------------------------------
+
+\subsection{Transformation of the Normal Distribution} % (fold)
+\label{sub:transformation_of_the_normal_distribution}
+
+\begin{equation}
+  f_y = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{y-\mu^2}{2\sigma^2}}
+\end{equation}
+\begin{equation}
+  P(Y \leq y) = \Phi (\frac{y - \mu}{\sigma}) 
+\end{equation}
+
+% subsection transformation_of_the_normal_distribution (end)
+%--------------------------------------------------
+
+% section continuous_random_variables (end)

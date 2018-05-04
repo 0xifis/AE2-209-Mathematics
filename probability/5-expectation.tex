@@ -1,0 +1,69 @@
+\section{Expectation and Variance} % (fold)
+\label{sec:expectation}
+
+%--------------------------------------------------
+\subsection{Expectation} % (fold)
+\label{sub:expectation}
+\textbf{Discrete Random Variable}
+\begin{equation}
+  E(X) = \sum_{i=1}^N P(X=x_i)
+\end{equation}
+\textbf{Continuous Random Variable}
+\begin{equation}
+  E(X) = \int^\infty_{-\infty} xf(x)dx
+\end{equation}
+% subsection expectation (end)
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsection{Properties of Expectation} % (fold)
+\label{sub:properties_of_expectation}
+
+\begin{subequations}
+  \begin{equation}
+    E(aX + b) = aE(X) +b
+  \end{equation}
+  \begin{equation}
+    E(X + Y) = E(X) + E(Y)
+  \end{equation}
+\end{subequations}
+
+\begin{subequations}
+  \begin{equation}
+    E(g(X)) = \sum_{i=1}^n g(x_i)P(X = x_i)
+  \end{equation}
+  \begin{equation}
+    E(g(X)) = \int^\infty_{-\infty} g(x_i)f(x)dx
+  \end{equation}
+\end{subequations}
+% subsection properties_of_expectation (end)
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsection{Variance} % (fold)
+\label{sub:variance}
+\begin{equation}
+  Var(X) = E[(X-E(X))^2]
+\end{equation}
+% subsection variance (end)
+%--------------------------------------------------
+
+%--------------------------------------------------
+\subsection{Properties of Variance} % (fold)
+\label{sub:properties_of_variance}
+\begin{equation}
+  Var(aX + b) = a^2Var(X)
+\end{equation}
+\begin{equation}
+  Var(X) = E(X^2) - E(X)^2
+\end{equation}
+
+If $X$ and $Y$ are independent random variables,
+
+\begin{equation}
+  Var(X+Y) = Var(X) + Var(Y)
+\end{equation}
+
+% subsection properties_of_variance (end)
+%--------------------------------------------------
+% section expectation (end)
