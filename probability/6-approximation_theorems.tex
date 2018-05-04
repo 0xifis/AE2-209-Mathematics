@@ -1,0 +1,47 @@
+\section{Approximation Theorems} % (fold)
+\label{sec:approximation_theorems}
+
+Suppose $X_1, X_2 ...X_n$ is a sequence of independent random variables with the same probability distribution, $E(X_i) =\mu$. Let
+
+\begin{equation}
+  \overline{X_n} = \frac{1}{n}\sum_{i=1}^n X_i \qquad  
+\end{equation}
+
+Then,
+
+\begin{equation}
+  P(|\overline{X_n} - \mu| < \epsilon) \rightarrow 1 \qquad \text{for } n \rightarrow \infty
+\end{equation}
+
+
+%-------------------------------------------------- 
+\subsection{Approximating Binomial (Poisson)} % (fold)
+\label{sub:approximating_binomial_}
+
+Let $X \sim B(n,p)$ with large $n$, small $p$ and $\mu = np$. Then for small $r$,
+
+\begin{equation}
+  P(X=r) \approx \frac{e^{-\mu}\mu^r}{r!}
+\end{equation}
+% subsection approximating_binomial_ (end)
+%-------------------------------------------------- 
+
+
+%-------------------------------------------------- 
+\subsection{Approximating Binomial (Normal)} % (fold)
+\label{sub:approximating_binomial_}
+
+For a sequence of independent, random variables $X_i$, the distribution of
+
+\begin{equation}
+  Y_n = \sum_{i=1}^nX_i
+\end{equation}
+is approximated as a normal distribution
+\begin{equation}
+   Y_n \sim N(n \mu, n \sigma^2)
+ \end{equation}
+ where $E(X_i)=\mu$ and $Var(X_i) = \sigma^2$.
+% subsection approximating_binomial_ (end)
+%--------------------------------------------------
+
+% section approximation_theorems (end)
