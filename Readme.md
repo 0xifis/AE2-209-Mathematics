@@ -12,7 +12,8 @@ There is no assurance that information contained here are error-free. Users are 
 7. Discrete Random Variables
 8. Continuous Randon Variables
 9. Expectation and Variance
-10. Reliability Analysis
+10. Approximation Theorems
+11. Reliability Analysis
 
 ### License
 The content of this project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. However, the source code used to display and format the content is licensed under the [The LaTeX Project Public License
